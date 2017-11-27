@@ -1,0 +1,48 @@
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+    background: white;
+}
+
+.title {
+	margin-left: 0;
+	background-color: #333;
+	overflow: hidden;
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 100px;
+}
+
+.title h1 {
+	text-align:center;
+	width:100%;
+	display: block;
+	color: white;
+	padding: 14px 15px;
+	text-decoration: none;
+	font-size:70px;
+}
+
+.title img{
+	max-width: 100%;
+	max-height: 100%;
+	float: right;
+	vertical-align: middle;
+}
+
+.button{
+	display: block;
+	position: relative;
+	top: 50px;
+	appearance: none;
+	outline: 0;
+	background-color: skyblue;
+	border: 0;
+	padding: 20px 30px;
+	width: 100%;
+	cursor: pointer;
+	font-size: 40px;
+	text-align:center;
+}
+ 

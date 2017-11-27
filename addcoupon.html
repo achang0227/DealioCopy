@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110075534-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-110075534-1');
+		</script>
+		
+		<title> Add Coupon </title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/coupon.css" rel="stylesheet">
+		<link href="css/addcoupon.css" rel="stylesheet">
+		<link href="css/modal.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="title">
+			<h1> ADD COUPON </h1>
+		</div>
+
+		<div class="coupon1">
+			<br>
+			<br>
+			<img src="http://www.livingrichwithcoupons.com/wp-content/uploads/2017/06/neutrogena-2.jpg" width=100% height=100%>
+			<br>
+		</div>
+
+		<form id="frm" action="coupon.html" onsubmit="save_data()">
+			<br>
+			Name (Must be Unique!): <br>
+			<input type="text" name="name" id="name" value="$4 off any ONE Neutrogena Cosmetics Face Product"/><br>
+			<br>
+			Expiration Date:<br>
+			<input type="date" name="expdate" id="expdate" value="2017-07-29"/><br>
+			<br>
+			<!-- add tag template -->
+			<script id="tag-template" type="text/x-handlebars-template">
+				<input type="checkbox" name="tag{{index}}" id="tag{{index}}" value="{{tagname}}"> {{tagname}} <br>
+			</script>
+
+			Tags:		<button id="newTag" type="button"> Add Custom Tag </button> <br>
+			<ul id ="couplist">
+			</ul>
+
+		</form>
+
+
+		<div id="myModal" class="modal" onsubmit="add_tag()">
+			<div class="modal-content">
+				<span class="close"> &times;</span>
+					<form id="frm3">
+						Add Tag:
+						<input type="text" name="customtagname" id="customtagname" placeholder="Type name of new tag here"/><br>
+						<input type="submit" name="save_tag" value="Save tag">
+					</form>
+
+			</div>
+		</div>
+
+
+		<form id="frm2" action="coupon.html" onsubmit="save_data()">
+			Comments:
+			<br>
+			<textarea name="comments" rows="5" form="frm2" placeholder="Comments..."> </textarea>
+			<br>
+			<br>
+			<input type="submit" name="save" value="Save" >
+		</form>
+		<br>
+		<a href="coupon.html" id="cancel" class="coupon"> Cancel </a>
+		<br>
+
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="js/bootstrap.bundle.js"></script>
+		<script src="js/handlebars-v4.0.11.js"></script>
+		<script src="js/addcoupon.js"></script>
+		<script src="js/addtag.js"></script>
+		<script src="js/mmodal.js"></script>
+
+	</body>
+</html>

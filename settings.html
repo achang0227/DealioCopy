@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Settings </title>
+    <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/settings.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+  </head>
+
+<body>
+    <div class="title">
+      <h1> SETTINGS </h1>
+    </div>
+
+      <a class = "button" href = "login.html" role = "button">LOGOUT</a>
+    
+
+
+  <!-- navbar -->
+    <div class="navbar">
+      <a href="coupon.html"><span class="glyphicon glyphicon-tag"></span><br> Coupons </a>
+      <input type="file" id="fileInput" name="fileInput" style="visibility: hidden; width: 0px; height: 0px;" accept="image/*" capture="camera"/>
+      <a href="addcoupon.html" onclick="scanFile();"> <span class="glyphicon glyphicon-camera"></span><br> Scan! </a>
+      <a href="settings.html"><span class="glyphicon glyphicon-cog"></span><br> Settings </a>
+    </div>
+
+  <!-- javascript links -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/addcoupon.js"></script>
+    <script src="js/coupon.js"></script>
+    <script src="js/handlebars-v4.0.11.js"></script>
+  </body>
+</html>
