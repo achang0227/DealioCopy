@@ -42,7 +42,8 @@
 		</div>
 		<!-- w3 search bar -->
 		<div class="search">
-				 <input type="text" id="myInput" onkeyup="organize(0)" placeholder="Search Coupon Name" title="Type in a name">
+				 <!-- <input type="text" id="myInput" onkeyup="organize(0)" placeholder="Search Coupon Name" title="Type in a name"> -->
+				 <input class="form-control" type="text" id="myInput" onkeyup="organize(0)" placeholder="Search Coupon Name">
  		</div>
 		<!-- sort by and filter tags buttons -->
 		<div class="container">
@@ -129,6 +130,11 @@
           	<p> Comments: {{comments}} </p>
           	<button id="deleteCoupon" value="{{title}}" type="button" action="coupon.html" onclick="deleteCoupon()"> Delete </button>
     	</script>
+
+
+
+
+
 		<!-- navbar -->
 		<div class="navbar">
 			<a href="coupon.html"><span class="glyphicon glyphicon-tag"></span><br> Coupons </a>

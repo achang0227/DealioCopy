@@ -1,8 +1,131 @@
 body {
   padding-top: 5rem;
 }
-.starter-template {
-  padding: 3rem 1.5rem;
-  text-align: center;
+
+#title{
+  /*text-align:center;*/
+  /*width:100%;*/
+  /*display: inline-block;*/
+  color: white;
+  /*text-decoration: none;*/
+  /*font-size:30px;*/
+  /*position: relative;*/
+  /*vertical-align: middle;*/
+  /*padding-top: 10px;*/
+  /*padding-bottom: 10px;*/
 }
 
+#cancelDelete{
+  text-align:left;
+  vertical-align: middle;
+  display: none;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+#select{
+  text-align:right;
+  vertical-align: middle;
+  display: inline-block;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+#cancel {
+  width:25%;
+  background-color:gray;
+}
+
+
+
+
+
+
+
+
+
+.coupon {
+  float:left;
+  display: block;
+  border-radius: 25px;
+  position: relative;
+  text-align: left;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 40px;
+  top: 8%;
+  width: 95%;
+    border: 25px #c9ddf1;
+    background-color: orange;
+  margin: 25px;
+    box-sizing: border-box;
+}
+
+.coupon a {
+  text-align:center;
+  position: absolute;
+}
+
+
+/************* search ********************/
+
+/*.wrap{
+  width: 90%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#myInput {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 35px;
+  padding: 12px 20px 12px 60px;
+  border: 1px solid #ddd;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}*/
+
+/**********************************/
+
+.expired .coupon.modalClickable {
+  background-color: lightgray;
+  color: black;
+}
+
+.EXPIRED .coupon.modalClickable {
+  background-color: gray;
+
+}
+
+.checks {
+    display: none;
+    float:right;
+  /* https://stackoverflow.com/questions/306924/checkbox-size-in-html-css */
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(4); /* IE */
+  -moz-transform: scale(4); /* FF */
+  -webkit-transform: scale(4); /* Safari and Chrome */
+  -o-transform: scale(4); /* Opera */
+  padding: 10px;
+}
