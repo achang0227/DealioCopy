@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+	    <link rel="icon" href="../../../../favicon.ico">
+
+	    <title> Coupon Page </title>
+		<link href="css/test.css" rel="stylesheet">
+		<!-- <link href="css/navbar.css" rel="stylesheet"> -->
+    	<link href="css/modal.css" rel="stylesheet">
+
+	    <!-- Bootstrap core CSS -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	    <!-- Custom styles for this template -->
+	    <link href="css/practice.css" rel="stylesheet">
+
+	    <!-- Google Analytics Content Experiment code -->
+		<script>function utmx_section(){}function utmx(){}(function(){var
+		k='165099235-1',d=document,l=d.location,c=d.cookie;
+		if(l.search.indexOf('utm_expid='+k)>0)return;
+		function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
+		indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
+		length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
+		'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+		'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
+		'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
+		valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+		'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
+		</script>
+		<script>utmx('url','A/B');</script>
+		<!-- End of Google Analytics Content Experiment code -->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110075534-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-110075534-1');
+		</script>
+
+  	</head>
+
+  	<body>
+		<div class="navbar navbar-dark bg-dark fixed-top">
+		    <div class="container">
+		    	<div class = "row">
+			    	<h3 id="title">COUPONS</h3>
+			      	<p id="cancelDelete">Cancel</p>
+					<button id="select"> Select </button>
+				</div>
+			</div>
+		</div>
+
+	    <main role="main" class="container">
+	      <div class="starter-template">
+	        <h1>Bootstrap starter template</h1>
+	        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+	      </div>
+
+	    </main><
+
+
+	    <nav class="navbar navbar-expand-md navbar-lightbg-light  fixed-bottom">
+	    	<div class="container">
+		  		<div class="row">
+		    		<div class="col-4">
+		      			<a href="coupon.html"><span class="glyphicon glyphicon-tag"></span><br> Coupons </a>
+		      			<input type="file" id="fileInput" name="fileInput" style="visibility: hidden; width: 0px; height: 0px;" accept="image/*" capture="camera"/>
+		    		</div>
+		    		<div class="col-4">
+		      			<a id="couponButton" href="addcoupon.html" onclick="scanFile();"> <span class="glyphicon glyphicon-camera"></span><br> Scan! </a>
+		    		</div>
+	    			<div class="col-4">
+		      			<a href="settings.html"><span class="glyphicon glyphicon-cog"></span><br> Settings </a>
+		    		</div>
+		  		</div>
+			</div>
+		</nav>
+
+	    <!-- Bootstrap core JavaScript
+	    ================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+	    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+	    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+	    <script src="../../../../dist/js/bootstrap.min.js"></script>
+  	</body>
+</html>
