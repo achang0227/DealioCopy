@@ -26,8 +26,7 @@
 		</div>
 
 		<br>
-
-		<!-- w3 search bar -->
+		
 		<div class="search">
 			<input class="form-control mr-sm-2" type="text" id="myInput" onkeyup="organize(0)" placeholder="Search Coupon Name" title="Type in a name">
  		</div>
@@ -37,17 +36,14 @@
  		<div class="container-fluid">
 	 		<div class="btn-group" role="group">
 	  			<div class="btn-group" role="group">
-	    			<!-- <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button> -->
 	    			<button type="button" class="btn btn-outline-warning btn-sort btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Sort by" id="sorting">
 		          			<span id="sb">Sort By</span> <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
 		        	</button>
 	    			<div class="dropdown-menu dropdown-menu-right">
-	      				<!-- <a class="dropdown-item" href="#">Dropdown link</a> -->
-	      				<!-- <a class="dropdown-item" href="#">Dropdown link</a> -->
 	      				<li>
 		            			<a href="#" id="expdateselection" onclick="organize(1)" class="sort-item">
 		              				<i class="fa fa-fw item-left" aria-hidden="true"></i>
-		              				<span class="item-center">Exp Date</span>
+		              				<span class="item-center">Expiration Date</span>
 		            			</a>
 		          			</li>
 		          			<li>
@@ -65,67 +61,17 @@
 					</li>
 				</script>
 	  			<div class="btn-group" role="group">
-	    			<!-- <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button> -->
 	    			<button type="button" class="btn btn-outline-warning btn-sort btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Tags" id="sorting">
 		          			<span>Tags</span> <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
 		        	</button>
-	    			<!-- <div class="dropdown-menu""> -->
-	      				<!-- <a class="dropdown-item" href="#">Dropdown link</a> -->
-	      				<!-- <a class="dropdown-item" href="#">Dropdown link</a> -->
-	    			<!-- </div> -->
 	    			<ul id="tagsUL" class="dropdown-menu" >
-	          			<form id="tagdpd" onsubmit="organize(0); return false;">
-							<input type="submit" id="go" value="Go!">
+	          			<form class="form-check-label" id="tagdpd" onsubmit="organize(0); return false;">
+							<button class="btn btn-warning" type="submit" id="go" value="Go!">Go!</button>
 	        			</form>
 	        		</ul>
 	  			</div>
 			</div>
 		</div>
-
-		<!-- sort by and filter tags buttons -->
-		<!-- <div class="container">
-			<div class="panel">
-   		 		<div class="panel-body">
-	      			<div class="btn-group">
-		        		<button type="button" class="btn btn-outline-warning btn-sort btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Sort by">
-		          			<span id="sb">Sort By</span> <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
-		        		</button>
-		        		<ul class="dropdown-menu">
-		          			<li>
-		            			<a href="#" id="expdateselection" onclick="organize(1)" class="sort-item">
-		              				<i class="fa fa-fw item-left" aria-hidden="true"></i>
-		              				<span class="item-center">Exp Date</span>
-		            			</a>
-		          			</li>
-		          			<li>
-		            			<a href="#" id="uploaddateselection" onclick="organize(2)" class="sort-item">
-		              				<i class="fa fa-fw  item-left" aria-hidden="true"></i>
-		              				<span class="item-center">Upload Date</span>
-		            			</a>
-		          			</li>
-		        		</ul>
-		      		</div>
-					<script id="filterTags-template" type="text/x-handlebars-template">
-						<li class="{{tagname}}" >
-		       				<input type="checkbox" class="sort-item" checked="checked" name="{{tagname}}"> {{tagname}} <br>
-			   				<i class="fa fa-fw item-left" aria-hidden="true"></i>
-						</li>
-					</script>
-		      		<div class="btn-group">
-		        		<button type="button" class="btn btn-outline-warning btn-sort btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Sort by">
-		          			<span>Tags</span> <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
-		        		</button>
-		        		<ul id="tagsUL" class="dropdown-menu" >
-		          			<form id="tagdpd" onsubmit="organize(0); return false;">
-								<input type="submit" id="go" value="Go!">
-		        			</form>
-		        		</ul>
-		      		</div>
-	  			</div>
-	  		</div>
-		</div> -->
-		<!--- END Sort and Filter Button -->
-
 
 		<!-- Dynamically generate coupons -->
 		<div class="couponList" id="couponList{{index}}"> <!--couponList{{index}}-->

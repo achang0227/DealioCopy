@@ -66,40 +66,19 @@ body {
 #sorting{
   vertical-align: middle;
   font-size: 20px;
-  padding: 2px 50px 2px 50px;
+  /*padding: 2px 50px 2px 50px;*/
+  width: 178px;
 }
 
-.dropdown-menu {
+.dropdown-menu{
   background-color: white;
-  font-size:30px;
-  width: 300px;
-
-  .sort-item {
-    display: flex;
-
-    .item-left{
-      align-self:center;
-    }
-
-   .item-center{
-     padding-right:15px;
-      flex-grow: 1;
-    }
-
-    .item-right {
-      align-self:center;
-    }
-  }
+  font-size:20px;
+  width: 175px;
 }
 
-/*.btn-default {
-      border-color: rgb(46, 109, 164);
-}*/
-
-.panel button{
-  background-color: #3b50db;
-  font-size:30px;
-  width: 100%;
+#go{
+  font-size:15px;
+  padding: 2px 60px 2px 60px;
 }
 
 /**************** coupon table *****************
