@@ -146,8 +146,9 @@ body {
 }
 
 #checks {
-  /*display: none;*/
-  margin-left: 325px;
+  display: none;
+  /*margin-left: 325px;*/
+  margin-left: 75%;
   margin-top: 5px;
   -ms-transform: scale(2); /* IE */
   -moz-transform: scale(2); /* FF */
