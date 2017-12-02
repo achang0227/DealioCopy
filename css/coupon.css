@@ -124,7 +124,7 @@ body {
 #modal{
   border-radius: 25px;
   font-size: 15px;
-  padding: 5px 60px 5px 60px;
+  padding: 3px 60px 3px 60px;
   margin: auto;
   display: block;
 }
@@ -147,11 +147,11 @@ body {
 }
 
 #checks {
-  /*display: none;*/
+  display: none;
   margin-left: 75%;
   margin-top: 10px;
-  -ms-transform: scale(3); /* IE */
-  -moz-transform: scale(3); /* FF */
-  -webkit-transform: scale(3); /* Safari and Chrome */
-  -o-transform: scale(3); /* Opera */
+  -ms-transform: scale(2.5); /* IE */
+  -moz-transform: scale(2.5); /* FF */
+  -webkit-transform: scale(2.5); /* Safari and Chrome */
+  -o-transform: scale(2.5); /* Opera */
 }
