@@ -1,16 +1,23 @@
 .navbar {
-	margin-left: 0;
+	/*margin-left: 0;*/
 	background-color: #3A9C44;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	position: fixed;
 	bottom: 0;
-	width: 100%;
+	/*width: 100%;*/
 	margin-bottom: 0px;
+	height: 10%;
 }
-#navbar{
-	/*height: 200px;*/
+
+.navbar a:hover {
+	color: white;
 }
-.navbar a {
+
+/*#navbar{
+	height: 300px;
+}*/
+
+/*.navbar a {
 	float:center;
 	display: block;
 	color: #f2f2f2;
@@ -18,16 +25,13 @@
 	padding: 14px 35px;
 	text-decoration: none;
 	font-size: 50px;
-}
+}*/
 
-.navbar a:hover {
-	color: orange;
-}
-#circle {
+/*#circle {
       width: 50px;
       height: 50px;
       -webkit-border-radius: 25px;
       -moz-border-radius: 25px;
       border-radius: 25px;
       background: red;
-}
+}*/
