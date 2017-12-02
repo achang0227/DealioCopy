@@ -75,7 +75,7 @@ body {
 #sortby{
   vertical-align: middle;
   font-size: 20px;
-  width: 185px;
+  width: 170px;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
 }
@@ -83,7 +83,7 @@ body {
 #tags{
   vertical-align: middle;
   font-size: 20px;
-  width: 185px;
+  width: 170px;
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -124,7 +124,7 @@ body {
 #modal{
   border-radius: 25px;
   font-size: 15px;
-  padding: 0px 60px 0px 60px;
+  padding: 5px 60px 5px 60px;
   margin: auto;
   display: block;
 }
@@ -143,15 +143,15 @@ body {
   display: block;
   /*opacity: 0.5;*/
   margin: auto;
+  padding-bottom: 20px;
 }
 
 #checks {
-  display: none;
-  /*margin-left: 325px;*/
+  /*display: none;*/
   margin-left: 75%;
-  margin-top: 5px;
-  -ms-transform: scale(2); /* IE */
-  -moz-transform: scale(2); /* FF */
-  -webkit-transform: scale(2); /* Safari and Chrome */
-  -o-transform: scale(2); /* Opera */
+  margin-top: 10px;
+  -ms-transform: scale(3); /* IE */
+  -moz-transform: scale(3); /* FF */
+  -webkit-transform: scale(3); /* Safari and Chrome */
+  -o-transform: scale(3); /* Opera */
 }
