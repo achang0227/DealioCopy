@@ -385,7 +385,8 @@ function changeText(event){
  $(this).text("Delete"); //changes select to delete
  $('#cancelDelete').show(); //shows select option
  $('#cancelPlaceholder').hide(); //hides the placeholder
- $('.checks').show(); //shows checkboxes to select coupons to delete
+ // $('.checks').show(); //shows checkboxes to select coupons to delete
+ $('.form-check-input').show(); //shows checkboxes to select coupons to delete
 }
 
 function deleteCoupon(){
@@ -419,8 +420,10 @@ $('#cancelDelete').click(function(){ //when click cancel
   $('#cancelDelete').hide(); //hides cancel option
   $('#cancelPlaceholder').show(); //shows the placeholder
    $('#select').html("Select"); //changes delete to select
-   var z = document.getElementsByClassName('.checks')
-   $('.checks').hide();
+   // var z = document.getElementsByClassName('.checks')
+   // $('.checks').hide();
+   var z = document.getElementsByClassName('.form-check-input')
+   $('.form-check-input').hide();
 });
 
 //does this need to be within document.ready???

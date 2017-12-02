@@ -105,12 +105,11 @@ body {
   display: block;
   border-radius: 25px;
   padding: 10px 10px;
-  /*font-size: 20px;*/
   width: 90%;
-  /*background-color: orange;*/
   background-color: #ffca44;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: auto;
+  font-size: 20px;
+  margin-top: 10px;
 }
 
 .expired .coupon.modalClickable {
@@ -126,22 +125,16 @@ body {
   border-radius: 25px;
   font-size: 15px;
   padding: 0px 60px 0px 60px;
-  margin-left: 75px;
-}
-
-#productTitle{
-  font-size: 20px;
+  margin-left: 90px;
 }
 
 #productDescription{
-  font-size: 20px;
   font-weight: bold;
   text-align: center;
+  padding-top: 10px
 }
 
 #expDate{
-  /*font-weight: bold;*/
-  font-size: 15px;
   text-align: center;
 }
 
@@ -151,12 +144,12 @@ body {
   margin: auto;
 }
 
-.checks {
+#checks {
   display: none;
-  float:right;
-  -ms-transform: scale(4); /* IE */
-  -moz-transform: scale(4); /* FF */
-  -webkit-transform: scale(4); /* Safari and Chrome */
-  -o-transform: scale(4); /* Opera */
-  padding: 10px;
+  margin-left: 80px;
+  margin-top: 10px;
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
 }
