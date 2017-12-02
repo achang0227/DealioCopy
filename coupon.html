@@ -40,7 +40,7 @@
  		<div class="container-fluid">
 	 		<div class="btn-group" role="group">
 	  			<div class="btn-group" role="group">
-	    			<button type="button" class="btn btn-outline-warning btn-sort btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Sort by" id="sorting">
+	    			<button type="button" class="btn btn-outline-warning btn-sort btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Sort by" id="sortby">
 	          			<span id="sb">Sort By</span> <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
 		        	</button>
 	    			<div class="dropdown-menu dropdown-menu-right">
@@ -65,7 +65,7 @@
 					</li>
 				</script>
 	  			<div class="btn-group" role="group">
-	    			<button type="button" class="btn btn-outline-warning btn-sort btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Tags" id="sorting">
+	    			<button type="button" class="btn btn-outline-warning btn-sort btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Tags" id="tags">
 		          			<span>Tags</span> <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
 		        	</button>
 	    			<ul id="tagsUL" class="dropdown-menu" >
@@ -89,10 +89,13 @@
 				<td class="{{title}}" name="{{title}}" id="{{title}}">
 		        	<input type="checkbox" class="checks" name="{{title}}"><br>
 		        	<div class="coupon modalClickable" id="{{title}}0">
-		          		<button id="modal" type="button" onclick="coupmodalfunc(document.getElementById('{{title}}0'))"> Enlarge </button>
-						<p>Product: {{title}}</p>
-						<p>Expiration Date: {{expdate}}</p>
-						<img src={{imag}} width=100% height=100%>
+		          		<button class="btn btn-light" id="modal" type="button" onclick="coupmodalfunc(document.getElementById('{{title}}0'))"> Enlarge </button>
+		          		<!-- <p>Product: {{title}}</p> -->
+						<!-- <p id="productTitle">Product:</p> -->
+						<p id="productDescription">{{title}}</p>
+						<!-- <p>Expiration Date: {{expdate}}</p> -->
+						<p id="expDate">Expiration Date: {{expdate}}</p>
+						<img id="couponImage" src={{imag}} width=85% height=85%>
 		        	</div>
 				</td>
 			</tr>

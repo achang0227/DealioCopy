@@ -23,7 +23,7 @@ body {
 
 #title{
   color: white;
-  font-size:50px;
+  font-size: 40px;
   padding-top: 3px;
   /*font-family: "Courier New", Courier, monospace;*/
   /*font-weight: bold;*/
@@ -72,10 +72,20 @@ body {
 
 /********** sort and tags buttons ***************/
 
-#sorting{
+#sortby{
   vertical-align: middle;
   font-size: 20px;
   width: 178px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+#tags{
+  vertical-align: middle;
+  font-size: 20px;
+  width: 178px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 .dropdown-menu{
@@ -95,10 +105,10 @@ body {
   display: block;
   border-radius: 25px;
   padding: 10px 10px;
-  font-size: 20px;
-  width: 95%;
-  border: 25px #c9ddf1;
-  background-color: orange;
+  /*font-size: 20px;*/
+  width: 90%;
+  /*background-color: orange;*/
+  background-color: #ffca44;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -112,9 +122,38 @@ body {
   background-color: gray;
 }
 
+#modal{
+  border-radius: 25px;
+  font-size: 15px;
+  padding: 0px 60px 0px 60px;
+  margin-left: 75px;
+}
+
+#productTitle{
+  font-size: 20px;
+}
+
+#productDescription{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#expDate{
+  /*font-weight: bold;*/
+  font-size: 15px;
+  text-align: center;
+}
+
+#couponImage{
+  display: block;
+  /*opacity: 0.5;*/
+  margin: auto;
+}
+
 .checks {
-    display: none;
-    float:right;
+  display: none;
+  float:right;
   -ms-transform: scale(4); /* IE */
   -moz-transform: scale(4); /* FF */
   -webkit-transform: scale(4); /* Safari and Chrome */
