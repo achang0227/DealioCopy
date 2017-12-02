@@ -51,14 +51,6 @@ body {
 
 /************* search ********************/
 
-/*.wrap{
-  width: 90%;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}*/
-
 #myInput {
   font-size: 20px;
   padding: 12px 0px 12px 20px;
@@ -69,41 +61,13 @@ body {
   padding-right: 10px;
 }
 
-
-
 /********** sort and tags buttons ***************/
 
-#sortby{
+#sorting{
   vertical-align: middle;
-  font-size: 15px;
-  /*padding-left: 50%;*/
-  /*padding-right: 50%;*/
-  padding: 5px 55px 5px 55px;
+  font-size: 20px;
+  padding: 2px 50px 2px 50px;
 }
-
-#tags{
-  vertical-align: middle;
-  font-size: 15px;
-  padding: 5px 55px 5px 55px;
-}
-
-  /*span {
-    flex-grow: 1;
-    text-align: left;
-    display: inline-block;
-    vertical-align: bottom;
-    max-width: 100px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  i {
-    align-self:center;
-    right: -6px;
-    position: relative;
-  }
-
 
 .dropdown-menu {
   background-color: white;
@@ -128,17 +92,17 @@ body {
   }
 }
 
-.btn-default {
+/*.btn-default {
       border-color: rgb(46, 109, 164);
-}
+}*/
 
-/*.panel button{
+.panel button{
   background-color: #3b50db;
   font-size:30px;
   width: 100%;
-}*/
+}
 
-/**************** coupon table ******************/
+/**************** coupon table *****************
 
 /*#myTable {
   border-collapse: collapse;
