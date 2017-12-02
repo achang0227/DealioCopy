@@ -1,87 +1,3 @@
-/*.panel button{
-  background-color: #3b50db;
-  font-size:30px;
-  width: 300px;
-}*/
-
-.title-container {
-  margin-left: 0;
-  background-color: #3A9C44;
-  overflow: hidden;
-  position: relative;
-  top: 0;
-  width: 100%;
-  height: 60px;
-}
-
-#title{
-  text-align:center;
-  float: right;
-  margin-left: 0px;
-  /*width:100%;*/
-  /*display: inline-block;*/
-  color: white;
-  /*padding: 14px 15px;*/
-  /*text-decoration: none;*/
-  font-size:40px;
-  /*position: relative;*/
-  /*vertical-align: middle;*/
-}
-
-#select{
-  /*text-align:right;*/
-  vertical-align: middle;
-  display: inline-block;
-  color: black;
-  /*padding-top: 30px;*/
-  /*padding-bottom: 30px;*/
-  font-size: 15px;
-}
-
-#cancelDelete{
-  /*text-align:left;*/
-  vertical-align: middle;
-  display: none;
-  color: white;
-  /*padding-top: 30px;*/
-  /*padding-bottom: 30px;*/
-  font-size: 15px;
-}
-
-/*.title img{
-  max-width: 100%;
-  max-height: 100%;
-  float: right;
-  vertical-align: middle;
-}*/
-
-/*.coupon {
-  float:left;
-  display: block;
-  border-radius: 25px;
-  position: relative;
-  text-align: left;
-  padding: 10px 10px;
-  text-decoration: none;
-  font-size: 40px;
-  top: 8%;
-  width: 95%;
-    border: 25px #c9ddf1;
-    background-color: orange;
-  margin: 25px;
-    box-sizing: border-box;
-}*/
-
-/*.coupon a {
-  text-align:center;
-  position: absolute;
-}*/
-
-/*#cancel {
-  width:25%;
-  background-color:gray;
-}*/
-
 div {
     display: -webkit-flex;
     -webkit-justify-content: space-around;
@@ -94,7 +10,82 @@ body {
   overflow-y: scroll;
 }
 
-/*********** sort and tags buttons ***************
+/*********** title ***************/
+.title-container {
+  margin-left: 0;
+  background-color: #3A9C44;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 60px;
+}
+
+#title{
+  color: white;
+  font-size:50px;
+  padding-top: 3px;
+  /*font-family: "Courier New", Courier, monospace;*/
+  /*font-weight: bold;*/
+}
+
+#select{
+  vertical-align: middle;
+  display: inline-block;
+  color: black;
+  font-size: 15px;
+}
+
+#cancelDelete{
+  vertical-align: middle;
+  display: none;
+  color: black;
+  font-size: 15px;
+}
+
+#cancelPlaceholder{
+  vertical-align: middle;
+  color: #3A9C44;
+  font-size: 15px;
+}
+
+/************* search ********************/
+
+/*.wrap{
+  width: 90%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}*/
+
+#myInput {
+  font-size: 20px;
+  padding: 12px 0px 12px 20px;
+}
+
+.search {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+
+/********** sort and tags buttons ***************/
+
+#sortby{
+  vertical-align: middle;
+  font-size: 15px;
+  /*padding-left: 50%;*/
+  /*padding-right: 50%;*/
+  padding: 5px 55px 5px 55px;
+}
+
+#tags{
+  vertical-align: middle;
+  font-size: 15px;
+  padding: 5px 55px 5px 55px;
+}
 
   /*span {
     flex-grow: 1;
@@ -139,44 +130,53 @@ body {
 
 .btn-default {
       border-color: rgb(46, 109, 164);
+}
+
+/*.panel button{
+  background-color: #3b50db;
+  font-size:30px;
+  width: 100%;
 }*/
 
-/************* search ********************/
+/**************** coupon table ******************/
 
-/*.wrap{
-  width: 90%;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#myInput {
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  width: 100%;
-  font-size: 35px;
-  padding: 12px 20px 12px 60px;
-  border: 1px solid #ddd;
-}
-
-#myTable {
+/*#myTable {
   border-collapse: collapse;
   width: 100%;
   border: 1px solid #ddd;
   font-size: 18px;
-}
+}*/
 
-#myTable th, #myTable td {
+/*#myTable th, #myTable td {
   text-align: left;
   padding: 12px;
-}
+}*/
 
-#myTable tr {
+/*#myTable tr {
   border-bottom: 1px solid #ddd;
 }*/
 
-/**********************************/
+/*.coupon {
+  float:left;
+  display: block;
+  border-radius: 25px;
+  position: relative;
+  text-align: left;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 40px;
+  top: 8%;
+  width: 95%;
+    border: 25px #c9ddf1;
+    background-color: orange;
+  margin: 25px;
+    box-sizing: border-box;
+}*/
+
+/*.coupon a {
+  text-align:center;
+  position: absolute;
+}*/
 
 .expired .coupon.modalClickable {
   background-color: lightgray;

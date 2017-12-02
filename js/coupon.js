@@ -384,6 +384,7 @@ function changeText(event){
 
  $(this).text("Delete"); //changes select to delete
  $('#cancelDelete').show(); //shows select option
+ $('#cancelPlaceholder').hide(); 
  $('.checks').show(); //shows checkboxes to select coupons to delete
 }
 
@@ -416,6 +417,7 @@ function deleteCoupon(){
 
 $('#cancelDelete').click(function(){ //when click cancel
   $('#cancelDelete').hide(); //hides cancel option
+  $('#cancelPlaceholder').show(); 
    $('#select').html("Select"); //changes delete to select
    var z = document.getElementsByClassName('.checks')
    $('.checks').hide();
