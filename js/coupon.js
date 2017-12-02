@@ -384,7 +384,7 @@ function changeText(event){
 
  $(this).text("Delete"); //changes select to delete
  $('#cancelDelete').show(); //shows select option
- $('#cancelPlaceholder').hide(); 
+ $('#cancelPlaceholder').hide(); //hides the placeholder
  $('.checks').show(); //shows checkboxes to select coupons to delete
 }
 
@@ -417,7 +417,7 @@ function deleteCoupon(){
 
 $('#cancelDelete').click(function(){ //when click cancel
   $('#cancelDelete').hide(); //hides cancel option
-  $('#cancelPlaceholder').show(); 
+  $('#cancelPlaceholder').show(); //shows the placeholder
    $('#select').html("Select"); //changes delete to select
    var z = document.getElementsByClassName('.checks')
    $('.checks').hide();

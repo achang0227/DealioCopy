@@ -10,14 +10,16 @@
     	<link rel="icon" href="../../../../favicon.ico">
 
 		<title> Coupon Page </title>
+
 		<link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/coupon.css" rel="stylesheet">
-		<link href="css/navbarB.css" rel="stylesheet">
+		<link href="css/navbar.css" rel="stylesheet">
     	<link href="css/modal.css" rel="stylesheet">
 	</head>
 
 	<body id="couponBook">
+		<!-- header -->
 		<div class="title-container">
 			<button class="btn btn-link" id="cancelPlaceholder">Cancel</button>
 			<button class="btn btn-outline-light my-2 my-sm-0" id="cancelDelete">Cancel</button>
@@ -27,12 +29,14 @@
 
 		<br>
 		
+		<!-- search bar -->
 		<div class="search">
 			<input class="form-control mr-sm-2" type="text" id="myInput" onkeyup="organize(0)" placeholder="Search Coupon Name" title="Type in a name">
  		</div>
 
  		<br>
 
+ 		<!-- sortby and tag filter -->
  		<div class="container-fluid">
 	 		<div class="btn-group" role="group">
 	  			<div class="btn-group" role="group">
@@ -74,7 +78,7 @@
 		</div>
 
 		<!-- Dynamically generate coupons -->
-		<div class="couponList" id="couponList{{index}}"> <!--couponList{{index}}-->
+		<div class="couponList" id="couponList{{index}}">
 		    <form id="deletechecklist" onsubmit="">
 				<table id="myTable"></table>
 		    </form>
@@ -110,13 +114,15 @@
 		         <button id="deleteCoupon" value="{{title}}" type="button" action="coupon.html" onclick="deleteCoupon()"> Delete </button>
 	    </script>
 
+	    <br><br><br><br><br><br>
+
 		<!-- navbar -->
 		<div class="navbar">
-			<a href="coupon.html"><span class="glyphicon glyphicon-tag"></span><br> Coupons </a>
-			<input type="file" id="fileInput" name="fileInput" style="visibility: hidden; width: 0px; height: 0px;" accept="image/*" capture="camera"/>
-			<a href="addcoupon.html" onclick="scanFile();"> <span class="glyphicon glyphicon-camera"></span><br> Add Coupon </a>
-			<a href="settings.html"><span class="glyphicon glyphicon-cog"></span><br> Settings </a>
+			<a href="coupon.html" id="navLink"><span class="glyphicon glyphicon-tag"></span><br> Coupons </a>
+			<a href="addcoupon.html" onclick="scanFile();" id="navLink"> <span class="glyphicon glyphicon-camera"></span><br> Add Coupon </a>
+			<a href="settings.html" id="navLink"><span class="glyphicon glyphicon-cog"></span><br> Settings </a>
 		</div>
+		<input type="file" id="fileInput" name="fileInput" style="visibility: hidden; width: 0px; height: 0px;" accept="image/*" capture="camera"/>
 
 		<!-- javascript links -->
 		<script src="https://code.jquery.com/jquery.js"></script>

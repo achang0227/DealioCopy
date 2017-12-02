@@ -75,7 +75,6 @@ body {
 #sorting{
   vertical-align: middle;
   font-size: 20px;
-  /*padding: 2px 50px 2px 50px;*/
   width: 178px;
 }
 
@@ -92,45 +91,17 @@ body {
 
 /**************** coupon table *****************/
 
-/*#myTable {
-  border-collapse: collapse;
-  width: 100%;
-  border: 1px solid #ddd;
-  font-size: 18px;
-}*/
-
-/*#myTable th, #myTable td {
-  text-align: left;
-  padding: 12px;
-}*/
-
-/*#myTable tr {
-  border-bottom: 1px solid #ddd;
-}*/
-
 .coupon {
-  /*float:left;*/
   display: block;
   border-radius: 25px;
-  /*position: relative;*/
-  /*text-align: left;*/
   padding: 10px 10px;
-  text-decoration: none;
   font-size: 20px;
-  /*top: 8%;*/
-  /*width: 95%;*/
+  width: 95%;
   border: 25px #c9ddf1;
   background-color: orange;
-  /*margin: 25px;*/
-  /*box-sizing: border-box;*/
   margin-left: 10px;
   margin-right: 10px;
 }
-
-/*.coupon a {
-  text-align:center;
-  position: absolute;
-}*/
 
 .expired .coupon.modalClickable {
   background-color: lightgray;
@@ -139,7 +110,6 @@ body {
 
 .EXPIRED .coupon.modalClickable {
   background-color: gray;
-
 }
 
 .checks {
