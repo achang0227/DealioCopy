@@ -22,61 +22,53 @@
 			<h1 id="title"> MODIFY COUPON </h1>
 		</div>
 
+		<br>
+
 		<div class="coupon1" id="imgdiv">
-			<br>
-			<br>
 			<script id="modCimage-template" type="text/x-handlebars-template">
-			<img src="{{imag}}" width=100% height=100%>
-			<br>
-		</script>
+				<img src="{{imag}}" width=80% height=90%>
+			</script>
 		</div>
 
 		<form id="frm" action="coupon.html" onsubmit="save_mod_data()">
-			<br>
 			<script id="modC-template" type="text/x-handlebars-template">
-			Name (Must be Unique!): <br>
-			<input type="text" name="name" id="name" value="{{title}}"/><br>
-			<br>
-			Expiration Date:<br>
-			<input type="date" name="expdate" id="expdate" value="{{expdate}}"/><br>
-			<br>
-			<!-- add tag template -->
+				<p id="nameTitle">Name (Must be Unique!): </p>
+				<input class="form-control" type="text" name="name" id="name" value="{{title}}"/>
+				<p id="expDateTitle">Expiration Date:</p>
+				<input type="date" name="expdate" id="expdate" value="{{expdate}}"/>
+				<!-- add tag template -->
 			</script>
 			<script id="tag-template" type="text/x-handlebars-template">
-				<input type="checkbox" name="tag{{index}}" id="tag{{index}}" value="{{tagname}}"> {{tagname}} <br>
+				<input type="checkbox" name="tag{{index}}" id="tag{{index}}" value="{{tagname}}"> {{tagname}} 
+				<br>
 			</script>
-
-			Tags:		<button id="newTag" type="button"> Add Custom Tag </button> <br>
-			<ul id ="couplist">
-			</ul>
-
+			<p id="tagTitle">Tags:</p>
+			<ul id ="couplist"></ul>
+			<button class="btn btn-warning" id="newTag" type="button">
+				<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Custom Tag
+			</button>
 		</form>
-
 
 		<div id="myModal" class="modal" onsubmit="add_tag()">
 			<div class="modal-content">
 				<span class="close"> &times;</span>
-					<form id="frm3">
-						Add Tag:
-						<input type="text" name="customtagname" id="customtagname" placeholder="Type name of new tag here"/><br>
-						<input type="submit" name="save_tag" value="Save tag">
-					</form>
-
+				<form id="frm3">
+					<p id="addTagTitle">Add Tag:</p>
+					<input class="form-control" type="text" name="customtagname" id="customtagname" placeholder="Type name of new tag here"/><br>
+					<input class="btn btn-success" type="submit" name="save_tag" value="Save tag" id="saveTagButton">
+				</form>
 			</div>
 		</div>
 
-
-
 		<form id="frm2" action="coupon.html" onsubmit="save_mod_data()">
-			Comments:
-			<br>
+			<p id="commentTitle">Comments:</p>
 			<textarea name="comments" rows="5" form="frm2" placeholder="Comments..." value={{comments}}> </textarea>
-			<br>
-			<br>
-			<input type="submit" name="save" value="Save" >
+			<div class="btn-group" role="group" aria-label="Basic example">
+  				<input class="btn btn-success" type="submit" name="save" value="Save" id="submitButton">
+  				<a href="coupon.html" id="cancelButton" class="btn btn-secondary"> Cancel </a>
+			</div>
 		</form>
-		<br>
-		<a href="coupon.html" id="cancel" class="coupon"> Cancel </a>
+		
 		<br>
 
 		<script src="https://code.jquery.com/jquery.js"></script>
