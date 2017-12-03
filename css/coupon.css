@@ -37,8 +37,6 @@ body {
   font-size: 15px;
   margin-right: 5px;
   width: 65px;
-  /*padding-left: 15px;*/
-  /*padding-right: 15px;*/
 }
 
 #cancelDelete{
@@ -80,6 +78,7 @@ body {
   width: 170px;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
+  color: #9e791f;
 }
 
 #tags{
@@ -88,6 +87,7 @@ body {
   width: 170px;
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
+  color: #9e791f;
 }
 
 .dropdown-menu{
