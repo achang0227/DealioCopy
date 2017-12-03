@@ -106,12 +106,21 @@
 		</div>
 
 	    <script id="coupon-modal-template" type="text/x-handlebars-template">
-	        <img src={{imag}} width=100% height=100%>
-	          	<p> Product: {{title}}</p>
-        	  	<p> Expiration Date: {{expdate}} </p>
-	          	<p> Tags: {{tags}} </p>
-	          	<p> Comments: {{comments}} </p>
-		         <button id="deleteCoupon" value="{{title}}" type="button" action="coupon.html" onclick="deleteCoupon()"> Delete </button>
+	        <img id="modalCoupon" src={{imag}} width=80% height=800%>
+          	<p id="modalProductTitle"> Product:  </p>
+			<p id="modalProduct"> {{title}}</p>
+    	  	<p id="modalExpDateTitle"> Expiration Date: </p>
+    	  	<p id="modalExpDate"> {{expdate}} </p>
+          	<p id="modalTagTitle"> Tags: </p>
+			<p id="modalTag"> {{tags}} </p>
+          	<p id="modalCommentsTitle"> Comments: </p>
+			<p id="modalComments"> {{comments}} </p>
+          	
+    	  	
+          	
+          	
+	        <button class="btn btn-warning" id="deleteCoupon" value="{{title}}" type="button" action="coupon.html" onclick="deleteCoupon()"> Delete </button>
+	        <button class="btn btn-danger" id="modifyCoupon" value="{{title}}" type="button" action="addCoupon.html"> Modify </button>
 	    </script>
 
 	    <br><br><br><br><br><br>
