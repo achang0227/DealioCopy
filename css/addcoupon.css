@@ -1,45 +1,121 @@
-form{
-	font-size:40px;
+div {
+  display: -webkit-flex;
+  -webkit-justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
-input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    border: none;
-    border-bottom: 3px solid orange;
+body {
+  background-color: white;
+  overflow-y: scroll;
+  background-color: #edf2ee;
 }
 
-input[type=date] {
-    width: 100%;
-    padding: 12px 20px;
-    border: none;
-    border-bottom: 3px solid orange;
+/*********** title ***************/
+
+.title-container {
+  margin-left: 0;
+  background-color: #3A9C44;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 10%;
 }
 
-input[type=text]:focus {
-    border: 5px solid orange;
+#title {
+  color: white;
+  font-size: 40px;
+  padding-top: 3px;
 }
 
-input[type=date]:focus{
-	border: 5px solid orange;
+/*********** added coupon ***************/
+
+#couponImage{
+    padding-top: 10px;
+}
+
+/*********** first form ***************/
+
+#frm{
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+#nameTitle{
+    /*font-weight: bold;*/
+    font-size: 20px;
+}
+
+#name{
+    font-size: 15px;
+    border: 1px solid #3A9C44;
+    border-radius: 10px;
+
+}
+
+#expDateTitle{
+    /*font-weight: bold;*/
+    font-size: 20px;
+}
+
+#expdate{
+    font-size: 15px;
+    border: 1px solid #3A9C44;
+    border-radius: 10px;
+
+}
+
+#tagTitle{
+    /*font-weight: bold;*/
+    font-size: 20px;
+}
+
+#newTag{
+    padding: 2px 40px 2px 40px;
+    margin-left: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+/*********** comment section ***************/
+
+#frm2{
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+#commentTitle{
+    font-size: 20px;
 }
 
 textarea {
-    border: 5px solid orange;
+    border: 1px solid #3A9C44;
     width:100%;
+    border-radius: 10px;
 }
 
-.title h1 {
-    text-align:center;
-    width:100%;
+#saveCancelOption{
     display: block;
-    color: white;
-    padding: 14px 15px;
-    text-decoration: none;
-    font-size:70px;
+    margin: auto;
 }
 
-.coupon{
-    color: white;
-    font-size:40px;
+#submitButton{
+    padding: 2px 60px 2px 60px;
+    /*margin-left: 40px;*/
+    /*margin:auto;*/
+    /*display:block;*/
+    border-radius: 5px;
+    font-size: 15px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+#cancelButton{
+    padding: 2px 60px 2px 60px;
+    /*margin-left: 0px;*/
+    border-radius: 5px;
+    font-size: 15px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
 }

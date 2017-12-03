@@ -419,7 +419,7 @@ function deleteCoupon(){
 $('#cancelDelete').click(function(){ //when click cancel
   $('#cancelDelete').hide(); //hides cancel option
   $('#cancelPlaceholder').show(); //shows the placeholder
-   $('#select').html("Select"); //changes delete to select
+   $('#select').html("Edit"); //changes delete to select
    // var z = document.getElementsByClassName('.checks')
    // $('.checks').hide();
    var z = document.getElementsByClassName('.form-check-input')

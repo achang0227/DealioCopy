@@ -8,6 +8,7 @@ div {
 body {
   background-color: white;
   overflow-y: scroll;
+  background-color: #edf2ee;
 }
 
 /*********** title ***************/
@@ -35,8 +36,9 @@ body {
   color: black;
   font-size: 15px;
   margin-right: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
+  width: 65px;
+  /*padding-left: 15px;*/
+  /*padding-right: 15px;*/
 }
 
 #cancelDelete{
