@@ -51,24 +51,24 @@ body {
     font-size: 15px;
     border: 1px solid #3A9C44;
     border-radius: 10px;
-
 }
 
 #expDateTitle{
     /*font-weight: bold;*/
     font-size: 20px;
+    padding-top: 5px;
 }
 
 #expdate{
     font-size: 15px;
     border: 1px solid #3A9C44;
     border-radius: 10px;
-
 }
 
 #tagTitle{
     /*font-weight: bold;*/
     font-size: 20px;
+    padding-top: 5px;
 }
 
 #newTag{
@@ -87,6 +87,7 @@ body {
 
 #commentTitle{
     font-size: 20px;
+    padding-top: 5px;
 }
 
 textarea {
@@ -95,27 +96,24 @@ textarea {
     border-radius: 10px;
 }
 
-#saveCancelOption{
+/*#saveCancelOption{
     display: block;
     margin: auto;
-}
+    vertical-align: middle;
+}*/
 
 #submitButton{
-    padding: 2px 60px 2px 60px;
-    /*margin-left: 40px;*/
-    /*margin:auto;*/
-    /*display:block;*/
-    border-radius: 5px;
-    font-size: 15px;
+    padding: 3px 55px 3px 55px;
+    font-size: 20px;
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
+    vertical-align: middle;
 }
 
 #cancelButton{
-    padding: 2px 60px 2px 60px;
-    /*margin-left: 0px;*/
-    border-radius: 5px;
-    font-size: 15px;
+    padding: 3px 55px 3px 55px;
+    font-size: 20px;
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
+    vertical-align: middle;
 }

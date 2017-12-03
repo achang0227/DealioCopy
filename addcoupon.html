@@ -29,8 +29,6 @@
 		</div>
 
 		<div class="coupon1">
-			<br>
-			<br>
 			<div class="container" id="couponImage">
 				<img src="http://www.livingrichwithcoupons.com/wp-content/uploads/2017/06/neutrogena-2.jpg" width=80% height=90%>
 			</div>
@@ -39,12 +37,11 @@
 		<form id="frm" action="coupon.html" onsubmit="save_data()">
 			<p id="nameTitle">Name (Must be Unique!): </p>
 			<input class="form-control" type="text" name="name" id="name" value="$4 off any ONE Neutrogena Cosmetics Face Product"/>
-			<br>
 			<p id="expDateTitle">Expiration Date:</p>
 			<input class="form-control" type="date" name="expdate" id="expdate" value="2017-07-29"/>
-			<br>
 			<script id="tag-template" type="text/x-handlebars-template">
-				<input type="checkbox" name="tag{{index}}" id="tag{{index}}" value="{{tagname}}"> {{tagname}} <br>
+				<input type="checkbox" name="tag{{index}}" id="tag{{index}}" value="{{tagname}}"> {{tagname}} 
+				<br>
 			</script>
 			<p id="tagTitle">Tags:</p>
 			<ul id ="couplist"></ul>
@@ -66,8 +63,8 @@
 
 		<form id="frm2" action="coupon.html" onsubmit="save_data()">
 			<p id="commentTitle">Comments:</p>
-			<textarea name="comments" rows="4" form="frm2" placeholder="Comments..."> </textarea>
-			<div class="btn-group" role="group" aria-label="Basic example" id="saveCancelOption">
+			<textarea name="comments" rows="3" form="frm2" placeholder="Comments..."> </textarea>
+			<div class="btn-group" role="group" aria-label="Basic example">
   				<input class="btn btn-success" type="submit" name="save" value="Save" id="submitButton">
   				<a href="coupon.html" id="cancelButton" class="btn btn-secondary"> Cancel </a>
 			</div>
