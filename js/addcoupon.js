@@ -42,7 +42,7 @@ function save_data(){
   }
 
   
-  list.push({'title': form1.elements[0].value, 'expdate': form1.elements[1].value, 'tags': arr, 'comments':frm2.elements[0].value, 'imag': 'http://www.livingrichwithcoupons.com/wp-content/uploads/2017/06/neutrogena-2.jpg'});
+  list.push({'title': form1.elements[0].value, 'expdate': form1.elements[1].value, 'tags': arr, 'comments':frm2.elements[0].value, 'imag': 'butter.png'});
   localStorage.setItem('customCoupons', JSON.stringify(list));
 
   alert("Coupon Added!");
