@@ -432,3 +432,9 @@ $('#couponButton').click(function(){
   tracker = ga.getAll()[0];
   tracker.send('event', '#couponButton','click'); //is this the right category??
 })
+
+function modifyCoupon(){
+  var stringid = document.getElementById('deleteCoupon').value;
+  localStorage.setItem('toModify', stringid);
+  location.href="modcoupon.html"
+}
