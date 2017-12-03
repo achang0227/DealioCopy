@@ -92,6 +92,7 @@ textarea {
     border: 1px solid #3A9C44;
     width:100%;
     border-radius: 10px;
+    font-size: 15px;
 }
 
 #submitButton{
@@ -120,6 +121,7 @@ textarea {
 #addTagTitle{
     font-size: 20px;
     padding-top: 5px;
+    color: white;
 }
 
 #customtagname{
@@ -133,11 +135,18 @@ textarea {
     margin-bottom: 10px;
     border-radius: 25px;
     width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
-
-
-
+.tagContainer{
+  font-size: 15px;
+  float:left;
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+}
 
 
 

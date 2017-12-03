@@ -16,11 +16,15 @@
     	<meta name="author" content="">
     	<link rel="icon" href="../../../../favicon.ico">
 
+
 		<title> Add Coupon Page </title>
 
 		<link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/addcoupon.css" rel="stylesheet">
+		<link href="css/coupon.css" rel="stylesheet">
+		<link href="css/modal.css" rel="stylesheet">
+    	<link href="css/1-col-portfolio.css" rel="stylesheet">
 	</head>
 
 	<body>
@@ -44,7 +48,9 @@
 				<br>
 			</script>
 			<p id="tagTitle">Tags:</p>
-			<ul id ="couplist"></ul>
+			<div class="tagContainer">
+				<ul id ="couplist"></ul>
+			</div>
 			<button class="btn btn-warning" id="newTag" type="button">
 				<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Custom Tag
 			</button>
