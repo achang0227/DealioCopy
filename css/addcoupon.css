@@ -70,6 +70,7 @@ body {
 }
 
 #newTag{
+  margin-top: 10px;
     padding: 2px 40px 2px 40px;
     margin-left: 40px;
     border-radius: 10px;
@@ -140,14 +141,10 @@ textarea {
 }
 
 .tagContainer{
-  font-size: 15px;
+  font-size: 12px;
   float:left;
   -ms-transform: scale(1.5); /* IE */
   -moz-transform: scale(1.5); /* FF */
   -webkit-transform: scale(1.5); /* Safari and Chrome */
   -o-transform: scale(1.5); /* Opera */
 }
-
-
-
-
