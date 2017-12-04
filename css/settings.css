@@ -1,9 +1,9 @@
 body{
-	/*font-family: 'Source Sans Pro', sans-serif;*/
 	color: white;
     background: white;
     background-color: white;
   	overflow-y: scroll;
+  	background-color: #edf2ee;
 }
 div {
   display: -webkit-flex;
@@ -28,7 +28,20 @@ div {
   padding-top: 3px;
 }
 
-.button{
+#space{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 70px 150px 70px 150px;
+}
+
+#logoutButton{
+	display: block;
+	margin: auto;
+	font-size: 25px;
+	padding: 10px 100px 10px 100px;
+}
+
+/*.button{
 	display: block;
 	position: relative;
 	top: 50px;
@@ -41,5 +54,5 @@ div {
 	cursor: pointer;
 	font-size: 40px;
 	text-align:center;
-}
+}*/
  
