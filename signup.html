@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<meta name="description" content="">
+    	<meta name="author" content="">
+    	<link rel="icon" href="../../../../favicon.ico">
+
 		<title> Sign Up </title>
+
+		<link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
 		<link href="css/signup.css" rel="stylesheet">
 	</head>
 
 	<body>
 		<!-- <div class="wrapper"> -->
-		<div class="container">
-			<h1>Sign Up</h1>
-			
+		<div class="title-container">
+			<h1 id="title">Sign Up</h1>
 			<form class="form" action = "coupon.html">
-				<input type="info" placeholder="First Name">
-				<br>
-				<input type="info" placeholder="Last Name">
-				<br>
-				<input type="info" placeholder="Email">
-				<br>
-				<input type="info" placeholder="User Name">
-				<br>
-				<input type="password" placeholder="Password">
-				<br>
-				<button type="form" id="login-button">Create Account</button>
+				<input id="info" type="info" placeholder="First Name">
+				<input id="info"type="info" placeholder="Last Name">
+				<input id="info"type="info" placeholder="Email">
+				<input id="info"type="info" placeholder="User Name">
+				<input id="info"type="password" placeholder="Password">
+				<button class="btn btn-success" type="form" id="createButton">Create Account</button>
 			</form>
 		</div>
 		<div class = "cancel">
-			<a href="login.html"><button>Cancel</button></a>
+			<a class="btn" id="cancelButton" role="button" href="login.html" style="background-color: #7f7f7f;"> Cancel </a>
 		</div>
 	</body>
 </html>
