@@ -28,17 +28,38 @@ div {
   padding-top: 3px;
 }
 
-#space{
-	margin-top: 20px;
-	margin-bottom: 20px;
-	padding: 70px 150px 70px 150px;
-}
-
 #logoutButton{
 	display: block;
 	margin: auto;
 	font-size: 25px;
-	padding: 10px 100px 10px 100px;
+	width: 80%;
+	margin-top: 20px;
+	color: white;
+}
+
+#userInfo{
+	background-color: #82c481;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	/*margin: 20px 20px 20px 20px;*/
+	/*margin-right: 20px;*/
+	width:80%;
+	border-radius: 10px;
+
+}
+
+#userImage{
+	padding-top: 20px;
+
+}
+
+#userName{
+	margin-left: 0px;
+	float:left;
+	font-size: 20px;
+	vertical-align: middle;
+	padding-top: 40px;
+	color: black;
 }
 
 /*.button{
