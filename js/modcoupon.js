@@ -62,9 +62,10 @@ function save_mod_data(){
   var form1 = document.getElementById("frm");
   var arr = [];
 
-  for (var i = 3; i < form1.elements.length; i++) {
-    console.log(form1.elements[i].value);
+  for (var i = 2; i < form1.elements.length; i++) {
     if(form1.elements[i].checked){
+      console.log(form1.elements[i].value);
+      console.log(i);
       arr.push(form1.elements[i].value);
     }
   }
