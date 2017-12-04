@@ -35,14 +35,13 @@ div {
 	width: 80%;
 	margin-top: 20px;
 	color: white;
+	border-radius: 10px;
 }
 
 #userInfo{
 	background-color: #82c481;
 	margin-top: 20px;
 	padding-bottom: 20px;
-	/*margin: 20px 20px 20px 20px;*/
-	/*margin-right: 20px;*/
 	width:80%;
 	border-radius: 10px;
 
@@ -61,19 +60,4 @@ div {
 	padding-top: 40px;
 	color: black;
 }
-
-/*.button{
-	display: block;
-	position: relative;
-	top: 50px;
-	appearance: none;
-	outline: 0;
-	background-color: skyblue;
-	border: 0;
-	padding: 20px 30px;
-	width: 100%;
-	cursor: pointer;
-	font-size: 40px;
-	text-align:center;
-}*/
  

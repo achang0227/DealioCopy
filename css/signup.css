@@ -1,6 +1,6 @@
 body{
 	font-family: 'Source Sans Pro', sans-serif;
-    background-color: #a2d8a2;
+    background-color: #95c495;
     font-size: 20px;
     text-align: center;
     color: white;
@@ -8,7 +8,7 @@ body{
 
 #title{
   font-size: 60px;
-  padding-top: 70px;
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
